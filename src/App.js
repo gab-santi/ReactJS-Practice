@@ -1,8 +1,9 @@
 import React from "react"
 
+import MainContentCheckboxes from "./components/MainContentCheckboxes"
 import Header from "./components/Header"
 
-function App() {
+/* function App() {
   const firstName = "Gab"
   const lastName = "Santi"
   const date = new Date(2018, 6, 31, 15)
@@ -39,6 +40,17 @@ function App() {
     <div>
       <Header />
       <h1 style={styles}>Good {timeOfDay}!</h1>
+    </div>
+  )
+}
+ */
+
+// checkbox activity
+function App() {
+  return (
+    <div>
+      <Header />
+      <MainContentCheckboxes />
     </div>
   )
 }
