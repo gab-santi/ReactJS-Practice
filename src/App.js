@@ -47,10 +47,20 @@ import ContactCard from "./components/ContactCard"
  */
 
 class App extends Component {
+  // initialize class
+  constructor() {
+    super() // initialize Component class
+    
+    // add states
+    this.state = {
+      answer: "Yes" // always use colon for assignment, comma for separation
+    }
+  }
+  
   render() {
     // do styling, processing, conditional rendering here before returning
     
-    
+
     return (
       <div>
         <Header />
