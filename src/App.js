@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 
 import MainContentCheckboxes from "./components/MainContentCheckboxes"
 import Header from "./components/Header"
@@ -46,32 +46,36 @@ import ContactCard from "./components/ContactCard"
 }
  */
 
-// checkbox activity
-function App() {
-  return (
-    <div>
-      <Header />
-      <MainContentCheckboxes />
-      
-      <ContactCard 
-        // class approach
-        contact={{name: "Mr. Whiskerson", imgUrl: "http://placekitten.com/300/200", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
-      />
-
-      <ContactCard 
-        contact={{name: "Fluffykins", imgUrl: "http://placekitten.com/400/200", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
-      />
-
-      <ContactCard 
-        contact = {{name: "Destroyer", imgUrl: "http://placekitten.com/400/300", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
-      />
-
-      <ContactCard 
-        contact = {{name: "Felix", imgUrl: "http://placekitten.com/200/100", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
-      />
-
-    </div>
-  )
+class App extends Component {
+  render() {
+    // do styling, processing, conditional rendering here before returning
+    
+    
+    return (
+      <div>
+        <Header />
+        <MainContentCheckboxes />
+        
+        <ContactCard 
+          // class approach
+          contact={{name: "Mr. Whiskerson", imgUrl: "http://placekitten.com/300/200", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
+        />
+  
+        <ContactCard 
+          contact={{name: "Fluffykins", imgUrl: "http://placekitten.com/400/200", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
+        />
+  
+        <ContactCard 
+          contact = {{name: "Destroyer", imgUrl: "http://placekitten.com/400/300", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
+        />
+  
+        <ContactCard 
+          contact = {{name: "Felix", imgUrl: "http://placekitten.com/200/100", phone: "123123123", email: "mr.whiskaz@catnap.meow"}}
+        />
+  
+      </div>
+    )
+  }
 }
 
 export default App

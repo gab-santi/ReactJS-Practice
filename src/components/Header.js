@@ -1,9 +1,11 @@
-import React from "react"
+import React, { Component } from "react"
 
-function Header() {
-    return (
-        <header className="navbar">Welcome</header>
-    )
+class Header extends Component {
+   render() {
+        return (
+            <header className="navbar">Welcome</header>
+        )
+   } 
 }
 
 export default Header
